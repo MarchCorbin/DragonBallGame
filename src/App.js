@@ -2,49 +2,42 @@ import React from 'react';
 import './App.css';
 import { fetchCharactersData } from './fetchCalls/fetchCalls'
 import NavBar from './NavBar/NavBar.js';
+import Game from './Game/Game'
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
       allChars: [],
-      fourChars: [],
     }
   }
 
   componentDidMount = async () => {
     await this.retrieveCharacterData()
     console.log(this.state.allChars, 'allCars')
+    // this.gameCharacters()
+  }
+
+  gameCharacters = () => {
+   if(this.state.allChars.length) {
+     return this.state.allChars
+   }
+  
   }
 
 retrieveCharacterData = () => {
   return fetchCharactersData()
   .then(data => {
     this.setState({allChars: data})
-    return data
   })
+  .catch(err => console.log(err))
 }
-
-getRandomChars = () => {
-  const characters = [{},{},{},{}]
-  let randomIndex = []
-  while (randomIndex <= 4) {
-    let randomNum = Math.floor(Math.random() * this.state.allChars.length)
-    if(randomIndex.indexOf(randomNum) === -1) randomIndex.push(randomNum)
-  }
-  return characters.map((emptySlot, index) => {
-    const randomIndexes = randomIndex[index]
-    console.log(characters, 'characters')
-    return this.state.allChars[randomIndexes] 
-  })
-}
-
-
 
 render() {
   return(
     <main className='main-page'>
       <NavBar />
+      <Game allCharacters={this.state.allChars} />
     </main>
   )
 }
