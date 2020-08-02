@@ -1,0 +1,16 @@
+.characters-main {
+  display: flex;
+  flex-flow: column;
+}
+
+.name-tag {
+  background: linear-gradient(to bottom right, #ffff00 13%, #ff0000 96%);
+  width: 7em;
+}
+
+.characters-page {
+  background: #CB0821;
+  width: 44em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

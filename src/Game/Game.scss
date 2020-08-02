@@ -1,3 +1,7 @@
+.game-page {
+  width: 51em;
+}
+
 .game-header {
   display: block;
   width: 100%;
@@ -11,6 +15,60 @@
 
 .game-body {
   background: #CB0821;
-  height: 100%;
+  height: 81%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.user-choices {
+  margin-top: 19em;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid black;
+}
+
+.user-button {
+  border: 3px solid #1e65a7;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  height: 5vh;
+  width: 95%;
+  margin: 2%;
+  box-shadow: 2px 2px 3px grey;
+  background: #FFE113;
+}
+
+.planet-text {
+  display: inline-block;
+}
+
+.feedback-text {
+  display: inline-block;
+}
+
+.correct-section {
+  height: 5em;
+}
+
+.correct-pic {
+  height: 19em;
+}
+
+.player-score {
+  border: 2px solid black;
+  align-self: auto;
+  position: relative;
+  margin-left: 167px;
+  bottom: 30px;
+  width: 7em;
+}
+
+.text-holder {
+  display: flex;
+  flex-flow: column-reverse;
+  height: 6em;
+}

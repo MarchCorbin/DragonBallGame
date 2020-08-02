@@ -1,6 +1,5 @@
 .main-page {
   height: 45em;
   width: 100%;
-  border: 2px solid green;
   display: flex;
 }
