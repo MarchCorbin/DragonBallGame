@@ -6,6 +6,8 @@ import NavBar from './NavBar/NavBar.js';
 import Game from './Game/Game'
 import { dbResult } from './mockResult/MockResult'
 import Characters from './Characters/Characters'
+import CharacterDetails from './CharacterDetails/CharacterDetails.js'
+import PropTypes from 'prop-types'
 
 class App extends React.Component {
   constructor() {
@@ -18,7 +20,6 @@ class App extends React.Component {
 
   componentDidMount = async () => {
     // await this.retrieveCharacterData()
-    console.log(this.state.allChars, 'allChars')
     this.conjureFour()
   }
 
@@ -34,16 +35,15 @@ class App extends React.Component {
      }
      this.fourCharacters(randomIndexes)
     }
-    }
+  }
   
 
 fourCharacters(randomIndexes) {
-  console.log(randomIndexes)
   let fourChar = []
-randomIndexes.map((index) => {
-fourChar.push(this.state.allChars[index])
-})
-this.setState({gameSelection: fourChar})
+  randomIndexes.map((index) => {
+  fourChar.push(this.state.allChars[index])
+  })
+  this.setState({gameSelection: fourChar})
 }
   
 
@@ -58,19 +58,23 @@ retrieveCharacterData = () => {
 
 render() {
   return(
-    <main className='main-page'>
+    <main role='main-styling' className='main-page'>
       <BrowserRouter>
         <Route exact path='/' >
-          <NavBar />
+          <NavBar conjureFour={this.conjureFour} />
         </Route>
-          <Route path="/game">
-            <NavBar />
-            <Game conjureFour={this.conjureFour} allCharacters={this.state.gameSelection} />
-          </Route>
-          <Route path='/character'>
-            <NavBar />
+        <Route path="/game">
+          <NavBar />
+          <Game 
+            conjureFour={this.conjureFour} 
+            allCharacters={this.state.gameSelection} />
+        </Route>
+        <Route path='/characters'>
+          <NavBar />
           <Characters allChars={this.state.allChars} />
-          </Route>
+        </Route>
+        <Route path='/characters/:name'>
+        </Route>
 
       </BrowserRouter>
     </main>
@@ -80,3 +84,8 @@ render() {
 }
 
 export default App;
+
+// App.PropTypes = {
+// allChars: PropTypes.array.isRequired,
+// gameSelection: PropTypes.array.isRequired
+// }

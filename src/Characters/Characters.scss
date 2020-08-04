@@ -1,6 +1,8 @@
 .characters-main {
   display: flex;
   flex-flow: column;
+  background: #CB0821;
+  height: 82em;
 }
 
 .name-tag {
@@ -8,9 +10,41 @@
   width: 7em;
 }
 
+.link-tag {
+  width: 7em;
+}
+
 .characters-page {
   background: #CB0821;
-  width: 44em;
+  width: 31em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+#link-text {
+  background: #191970;
+  color: gold;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 650px) {
+    
+  .characters-page {
+    background: #CB0821;
+    width: 87em;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 164px;
+  }
+
 }

@@ -4,9 +4,9 @@
 
 .game-header {
   display: block;
-  width: 100%;
-  height: 20%;
+  height: 12%;
   background: #CB0821;
+  width: 51em;
 }
 
 .game-logo {
@@ -15,17 +15,17 @@
 
 .game-body {
   background: #CB0821;
-  height: 81%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .user-choices {
-  margin-top: 19em;
+  margin-top: 11em;
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 40%;
   border: 2px solid black;
 }
 
@@ -44,10 +44,12 @@
 
 .planet-text {
   display: inline-block;
+  margin: 0;
 }
 
 .feedback-text {
   display: inline-block;
+  margin: 4px;
 }
 
 .correct-section {
@@ -55,20 +57,44 @@
 }
 
 .correct-pic {
-  height: 19em;
+  width: 24em;
+  height: 24em;
 }
 
 .player-score {
-  border: 2px solid black;
-  align-self: auto;
-  position: relative;
-  margin-left: 167px;
-  bottom: 30px;
-  width: 7em;
+  width: 10em;
+  height: 1.4em;
+  font-weight: 900;
+  color: white;
+  margin: 0;
 }
 
 .text-holder {
   display: flex;
   flex-flow: column-reverse;
-  height: 6em;
+  height: 4em;
+}
+
+@media screen and (min-width: 650px) {
+
+.game-body {
+  background: #CB0821;
+  height: 100%;
+  display: flex;
+  width: 88em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-header {
+  display: flex;
+  height: 22%;
+  background: #CB0821;
+  width: 88em;
+  justify-content: center;
+}
+
+
+
 }

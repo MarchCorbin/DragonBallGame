@@ -1,0 +1,100 @@
+.details-page {
+  background: #CB0821;
+  overflow: visible;
+}
+
+.details-section {
+  width: 24em;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-name {
+  background: linear-gradient(to top left, #666699 1%, #99ff33 75%);
+  width: max-content;
+  font-size: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  align-self: center;
+}
+
+.title-text {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 10px;
+}
+
+.readings-section {
+  background: linear-gradient(to top left, #666699 1%, #99ff33 75%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-image {
+  width: 23em;
+}
+
+.back-btn {
+  background: linear-gradient(to bottom right, #c0c0c0 4%, #ffffff 67%);
+  height: 2em;
+  font-weight: bolder;
+  font-size: 15px;
+  &:hover {
+    background: #191970;
+    color: gold;
+  }
+}
+
+.button-holder {
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 24em;
+  align-content: center;
+  align-items: center;
+}
+
+.descrip-text {
+  margin: 13px;
+}
+
+
+@media screen  and (min-width: 650px) {
+.characters-main {
+  display: flex;
+  flex-flow: column;
+  background: #CB0821;
+  height: 88em;
+  align-items: center;
+  }
+
+.details-section {
+  width: 24em;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-name {
+    background: linear-gradient(to top left, #666699 1%, #99ff33 75%);
+    width: max-content;
+    font-size: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center;
+}
+
+.game-logo {
+  height: 80%;
+}
+
+.game-header {
+  display: flex;
+  height: 20%;
+  background: #CB0821;
+  width: 88em;
+  justify-content: space-around;
+}
+
+}
