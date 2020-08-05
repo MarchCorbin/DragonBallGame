@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DragonBall: The Game
 
-## Available Scripts
+### Contributors
+- Corbin March (GitHub: [marchcorbin](https://github.com/marchcorbin))
 
-In the project directory, you can run:
+## Abstract
+This mobile-forward application is an interactive DragonBall facial recognition game. Fans of DragonBall can challenge to see how high a score they can rack up. For those unexperienced, there is a character index that allows users to study the characters of DragonBall to bring their skills with them into the game.
 
-### `npm start`
+## Learning Goals
+- Implement React components in a logical and modular design
+- Reinforce React fundamentals
+- Use React Router to create a multi-page user experience
+- Learn component and asynchronous JS testing
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup 
 
-### `npm test`
+Clone down this repository to your local machine.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once cloned, change into this repo's directory.
 
-### `npm run build`
+Run `npm install`.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run `npm start`.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In your browser, navigate to `localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project in Action
+![Feature Overview](https://user-images.githubusercontent.com/54864865/89250344-cc424e00-d5d1-11ea-86e7-9fb1cf4eba26.gif)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Wins
+- Finishing the MVP 
+- Creating an engaging multi game with scores
+- Successfully utilizing a modular design
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Challenges
+- Testing was an ongoing challenge throughout development
+- Getting grid to function appropriately while hosting many links
+- Routing was a fun challenge through development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Future Iterations
+- Implementing a homepage
+- Persistent scores across page load
+- Increased difficulty with different kind of questions
 
-## Learn More
+## Technologies Used
+- React 
+- React/Router
+- Jest & React-testing-library
+- SCSS/SASS
+- Fetch API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Systems/Practices
+- git/Version Control
+- Node Package Manager
