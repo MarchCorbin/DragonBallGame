@@ -15,3 +15,25 @@
 .home-styling {
     background: #CB0821;
 }
+
+@media screen and (min-width: 650px) {
+  .home-styling {
+    background: #CB0821;
+    width: 92em;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-logo {
+    height: 15em;
+  }
+
+  .home-text {
+    width: 30em;
+    font-size: 28px;
+  }
+
+
+}
