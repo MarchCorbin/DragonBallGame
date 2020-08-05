@@ -3,3 +3,15 @@
   width: 100%;
   display: flex;
 }
+
+.home-logo { 
+  height: 7em;
+}
+
+.home-text {
+  width: 20em;
+}
+
+.home-styling {
+    background: #CB0821;
+}

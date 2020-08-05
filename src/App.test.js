@@ -109,7 +109,6 @@ describe('App', () => {
    const { getByRole } = render(
      <MemoryRouter>
        <App />
-       <NavBar />
      </MemoryRouter>
    )
    const gameNav = getByRole('main-styling')

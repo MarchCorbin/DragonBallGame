@@ -3,6 +3,7 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom'
 import './App.css';
 import { fetchCharactersData } from './fetchCalls/fetchCalls'
 import NavBar from './NavBar/NavBar.js';
+import Logo from './Assets/dragonballlogo.png'
 import Game from './Game/Game'
 import { dbResult } from './mockResult/MockResult'
 import Characters from './Characters/Characters'
@@ -58,10 +59,14 @@ retrieveCharacterData = () => {
 
 render() {
   return(
-    <main role='main-styling' className='main-page'>
+    <main alt='main-styling' className='main-page'>
       <BrowserRouter>
         <Route exact path='/' >
           <NavBar conjureFour={this.conjureFour} />
+          <div className='home-styling'>
+          <img className='home-logo' src={Logo} alt='dragonball logo' />
+          <h3 className='home-text'>Welcome to DragonBall, Click on the controller to begin the game or Goku's head to check out the character index!</h3>
+          </div>
         </Route>
         <Route path="/game">
           <NavBar />
@@ -85,7 +90,4 @@ render() {
 
 export default App;
 
-// App.PropTypes = {
-// allChars: PropTypes.array.isRequired,
-// gameSelection: PropTypes.array.isRequired
-// }
+
